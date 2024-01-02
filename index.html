@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.2/dist/cdn.min.js"></script>
+
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+
+    <style>
+        .shadow-new {
+
+            box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px,
+                rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px,
+                rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+
+        }
+    </style>
+
+</head>
+
+<body class=" debug-screens font-medium">
+
+    <div class="w-full">
+
+        <!-- Header and Navigation starts from here -->
+        <section class="headerSec text-gray-600 border-b border-gray-200 w-full">
+
+            <div class="min-w-full container mx-auto md:flex lg:flex-row  sm:flex-col sm:space-y-4 sm:space-x-0 md:flex-row md:justify-between md:space-x-9 md:items-center 
+                 lg:p-5 items-center 2xl:space-x-48 p-2" x-data="{ isShowing: false }">
+
+                <!-- Left header section -->
+
+                <div class="flex items-center justify-between">
+                    <a href="#" class=""><span
+                            class="font-extrabold text-xl text-green-700 tracking-wide lg:mr-60 xl:mr-96 2xl:mr-96">tailwindcss
+                            mastery</span></a>
+                    <button @click="isShowing=!isShowing" class="md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                            stroke="currentColor" class="w-10 h-10">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+
+                </div>
+                <!-- Right Hedaer Section -->
+
+                <div class="pt-4 md:pt-0 md:!flex md:items-center md:ml-auto z-10 relative" x-show="isShowing" @click.away = "isShowing = false">
+                <nav class="text-sm flex flex-col md:flex-row space-y-3 items-start md:space-x-2 md:space-y-0 lg:text-base lg:justify-center lg:items-center
+                lg:space-x-4 lg:space-y-0 md:mr-10">
+<!----nav space-x-4 md:ml-12 md:space-x-3 2xl:ml-96 2xl:space-x-6-->
+                    <a href="#Home" class="hover:text-gray-900 hover:cursor-pointer">Home</a>
+                    <a href="#What You'll Learn" class="hover:text-gray-900 hover:cursor-pointer">What You'll Learn</a>
+                    <a href="#Pricing" class="hover:text-gray-900 hover:cursor-pointer">Pricing</a>
+                    <a href="#FAQ" class="hover:text-gray-900 hover:cursor-pointer">FAQ</a>
+
+                </nav>
+                <button class="bg-green-200 inline-flex items-center hover:bg-green-100 text-green-700 sm:mt-6 md:mt-0 hover:text-green-500 shadow
+hover:shadow-md px-3 py-1 ml-1 md:ml-2  rounded transition duration-500 ">Get the Course
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+
+
+                </button>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+        <!-- Hero Section Starts -->
+
+        <section class="hero" id="Home">
+
+
+            <!------
+<div class="container mx-auto ">
+
+
+
+       
+<div class=" absolute top-60 w-1/2 left-56 ">
+
+<h1 class="font-extrabold leading-none text-transparent bg-gradient-to-r from-green-400 to to-blue-500 bg-clip-text tracking-wide text-7xl mb-5">tailwindcss <br> mastery</h1>
+<p class="text-gray-600 text-lg">Make a good looking website quickly. <br> All with using the Tailwind Css classes </p>
+
+</div>
+
+
+
+
+<div class="float-right ">
+
+    <h3 class="font-black text-blue-500 text-5xl absolute right-80 top-72 transform rotate-90">Up to 99%</h3>
+    <div></div>
+
+
+
+<img src="tailwindImg.jpg" class="w-2/3 h-96 relative top-12"  alt="">
+
+
+</div>
+<div class="clear-both"></div>
+
+</div> ----->
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container mx-auto flex justify-center items-center sm:flex-col md:flex-col lg:flex-row ">
+
+
+
+                <!---Left Div-->
+                <div class="leftDiv w-1/2 sm:mt-10 md:mt-0">
+
+                    <h1 class="relatve top-8 font-extrabold leading-none text-transparent bg-gradient-to-r from-green-400 to
+     to-blue-500 bg-clip-text tracking-wide text-7xl mb-5   sm:text-5xl  md:text-6xl  lg:text-7xl xl:text-8xl">
+                        tailwindcss <br> mastery</h1>
+                    <p class="text-gray-600 text-lg sm:text-base md:-text-lg lg:text-xl xl:text-2xl">Make a good looking
+                        website quickly. <br> All with using the Tailwind Css classes </p>
+
+                </div>
+
+
+
+
+                <!---Right Div-->
+                <div class="rightDiv">
+
+                    <!----<h3 class="font-black text-blue-500 text-5xl absolute right-56 top-72 transform rotate-90">Up to 99%</h3>---->
+                    <div> <!--<span>Get The Course</span>--></div>
+
+
+
+                    <img src="tailwindImg.jpg"
+                        class="w-2/3 h-96 relative top-12   sm:mx-auto sm:rounded-lg sm:h-80 md:h-96 lg:h-80 xl:h-96 xl:w-3/4"
+                        alt="">
+                    <!--<div>empty div</div>-->
+
+                </div>
+
+                <div class="clear-both"></div>
+
+            </div>
+
+
+
+
+
+        </section>
+
+
+
+
+        <section class="text-gray-700 mt-20">
+
+            <!----About Us------>
+
+
+            <h2 class="text-6xl font-bold mb-3 text-center">Tailwind Video I've Done</h2>
+
+
+            <!------Main Content Div----->
+
+            <div
+                class="flex items-center  bg-gray-900 p-10 w-full sm:flex-col sm:space-y-14 lg:flex-row 2xl:justify-evenly">
+
+
+                <!------Left Div------->
+                <div class="flex flex-col w-full lg:items-start 2xl:ml-28">
+                    <h2
+                        class="font-bold leading-none text-transparent bg-gradient-to-r from-green-400 to
+to-blue-500 bg-clip-text tracking-tighter text-5xl mb-3 sm:text-center md:text-center md:text-6xl lg:text-4xl lg:text-left xl:text-center xl:text-6xl">
+                        About Me</h2>
+
+                    <p class="mt-3 text-gray-500 max-w-2xl leading-relaxed text-base md:w-full md:mx-auto md:text-lg lg:text-base lg:pr-10 xl:self-start xl:ml-0 xl:text-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti, sint autem error
+                        quisquam aspernatur molestiae delectus nostrum.
+                        Ad illo, magni rem nam dolorem fugiat, quod nesciunt ea id adipisci placeat asperiores deleniti
+                        fugit provident labore nihil
+                        inventore. Nisi provident nostrum vero maxime reprehenderit nesciunt. Nisi numquam pariatur
+                        ratione laborum impedit, sed nemo possimus architecto!</p>
+
+                </div>
+
+
+
+                <!------Right Div------->
+                <div class="max-w-xl border-2 border-gray-500">
+                    <p class="mb-2 text-base text-gray-500 ml-2">I did a Tailwind Video for my YouTube Channel</p>
+
+                    <iframe width="560" class="border-8 border-gray-600" height="315"
+                        src="https://www.youtube.com/embed/yAoLSRbwxL8?si=1eI-ef7EXQa8Ltqd" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </section>
+
+
+        <!-- What you'll learn in this Course -->
+
+        <section id="What You'll Learn" class="">
+
+            <div class="mx-40">
+
+                <!-- Container Div -->
+                <div class="container mx-auto px-20"></div>
+
+                <!-- Header -->
+
+                <div class="relative mt-12 py-10">
+
+                    <div
+                        class="absolute h-2 top-0 right-0 bg-gradient-to-r from-teal-500 to-blue-500 w-1/3 transform -translate-y-2">
+                    </div>
+                    <h2 class="mb-24 text-6xl sm:text-4xl text-center font-bold text-teal-800">What you'll learn in this
+                        Course</h2>
+                    <div
+                        class="absolute h-2 bg-gradient-to-r from-blue-500 to-teal-500 w-1/3 transform -translate-y-14">
+                    </div>
+
+                </div>
+                <!---Grid Area---->
+
+                <div class="lg:grid grid-cols-6 gap-12 sm:block sm:space-y-8">
+
+                    <div class="border  border-gray-600 shadow-lg col-span-2">
+                        <h3 class="bg-gray-600 text-gray-200 p-3 text-lg font-bold">How to build Tailwind Classes</h3>
+                        <p class="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, voluptatibus!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.
+                            Pariatur, voluptatibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.
+                        </p>
+                    </div>
+
+                    <div class="border  border-gray-600 shadow-lg col-span-2">
+                        <h3 class="bg-gray-600 text-gray-200 p-3 text-lg font-bold">How to build Tailwind Classes</h3>
+                        <p class="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, voluptatibus!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.
+                            Pariatur, voluptatibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.
+                        </p>
+                    </div>
+
+                    <div class="border  border-gray-600 shadow-lg col-span-2">
+                        <h3 class="bg-gray-600 text-gray-200 p-3 text-lg font-bold">How to build Tailwind Classes</h3>
+                        <p class="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, voluptatibus!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.Pariatur, voluptatibus! Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.Pariatur, voluptatibus! Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.</p>
+                    </div>
+
+                    <div class="border  border-gray-600 shadow-lg col-span-3">
+                        <h3 class="bg-gray-600 text-gray-200 p-3 text-lg font-bold">How to build Tailwind Classes</h3>
+                        <p class="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, voluptatibus!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.Pariatur, voluptatibus! Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.Pariatur, voluptatibus! Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.</p>
+                    </div>
+
+                    <div class="border  border-gray-600 shadow-lg col-span-3">
+                        <h3 class="bg-gray-600 text-gray-200 p-3 text-lg font-bold">How to build Tailwind Classes</h3>
+                        <p class="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, voluptatibus!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.Pariatur, voluptatibus! Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.Pariatur, voluptatibus! Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Quas, corporis! Consectetur minima facere similique. Maiores saepe perspiciatis nihil
+                            aliquid temporibus esse magnam illo cum.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </section>
+
+
+
+
+
+        <!------ What you will build in this Course ---------->
+
+        <section>
+
+            <div class="py-24 bg-gray-300 text-700 mt-16">
+
+                <!----Container Div --->
+                <div class="container mx-auto px-10">
+
+
+                    <div class="text-center mb-8">
+                        <h2 class="mb-2 sm:text-4xl lg:text-6xl text-gray-900">What we will build in this course</h2>
+                        <p class="text-lg text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Explicabo voluptatibuss consequuntur dolore!</p>
+
+                    </div>
+
+                    <!----- Grid Area ----->
+                    <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 2xl:grid-cols-6">
+
+
+                        <!---Box 1--->
+                        <div class="bg-gray-100 shadow-lg">
+
+                            <div class="w-1/3 mt-4 h-10 mx-auto flex items-center justify-center rounded-md bg-red-400">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+
+
+                            </div>
+
+                            <div class="p-4 text-center">Buttons</div>
+
+
+                        </div>
+
+
+
+                        <!---Box 2--->
+                        <div class="bg-gray-100 shadow-lg">
+
+                            <div
+                                class="w-1/3 mt-4 h-10 mx-auto flex items-center justify-center rounded-md bg-green-400">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+
+
+                            </div>
+
+                            <div class="p-4 text-center">Cards</div>
+
+
+                        </div>
+
+
+
+
+                        <!---Box 3--->
+                        <div class="bg-gray-100 shadow-lg">
+
+                            <div
+                                class="w-1/3 mt-4 h-10 mx-auto flex items-center justify-center rounded-md bg-blue-400">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+
+
+                            </div>
+
+                            <div class="p-4 text-center">Buttons</div>
+
+
+                        </div>
+
+
+
+                        <!---Box 4--->
+                        <div class="bg-gray-100 shadow-lg">
+
+                            <div
+                                class="w-1/3 mt-4 h-10 mx-auto flex items-center justify-center rounded-md bg-yellow-400">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+
+
+                            </div>
+
+                            <div class="p-4 text-center">Forms</div>
+
+
+                        </div>
+
+
+
+
+                        <!---Box 5--->
+                        <div class="bg-gray-100 shadow-lg">
+
+                            <div class="w-1/3 mt-4 h-10 mx-auto flex items-center justify-center rounded-md bg-sky-400">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+
+
+                            </div>
+
+                            <div class="p-4 text-center">Header</div>
+
+
+                        </div>
+
+
+
+
+                        <!---Box 6--->
+                        <div class="bg-gray-100 shadow-lg">
+
+                            <div
+                                class="w-1/3 mt-4 h-10 mx-auto flex items-center justify-center rounded-md bg-indigo-400">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+
+
+                            </div>
+
+                            <div class="p-4 text-center">Navigaton</div>
+
+
+                        </div>
+
+
+
+
+
+                        <!---Box 7--->
+                        <div class="bg-gray-100 shadow-lg">
+
+                            <div
+                                class="w-1/3 mt-4 h-10 mx-auto flex items-center justify-center rounded-md bg-fuchsia-500">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+
+
+                            </div>
+
+                            <div class="p-4 text-center">Hero</div>
+
+
+                        </div>
+
+
+
+
+                        <!---Box 8--->
+                        <div class="bg-gray-100 shadow-lg">
+
+                            <div
+                                class="w-1/3 mt-4 h-10 mx-auto flex items-center justify-center rounded-md bg-orange-600">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+
+
+                            </div>
+
+                            <div class="p-4 text-center">UI Cards</div>
+
+
+                        </div>
+
+
+
+                        <!---Box 9--->
+                        <div class="bg-gray-100 shadow-lg">
+
+                            <div class="w-1/3 mt-4 h-10 mx-auto flex items-center justify-center rounded-md bg-red-400">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+
+
+                            </div>
+
+                            <div class="p-4 text-center">Animation</div>
+
+
+                        </div>
+
+
+
+
+                        <!---Box 10--->
+                        <div class="bg-gray-100 shadow-lg">
+
+                            <div
+                                class="w-1/3 mt-4 h-10 mx-auto flex items-center justify-center rounded-md bg-blue-800">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+
+
+                            </div>
+
+                            <div class="p-4 text-center">Tooltip</div>
+
+
+                        </div>
+
+
+
+
+                        <!---Box 11--->
+                        <div class="bg-gray-100 shadow-lg">
+
+                            <div
+                                class="w-1/3 mt-4 h-10 mx-auto flex items-center justify-center rounded-md bg-lime-500">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+
+
+                            </div>
+
+                            <div class="p-4 text-center">Modal</div>
+
+
+                        </div>
+
+
+
+                        <!---Box 12--->
+                        <div class="bg-gray-100 shadow-lg">
+
+                            <div
+                                class="w-1/3 mt-4 h-10 mx-auto flex items-center justify-center rounded-md bg-purple-700">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+
+
+                            </div>
+
+                            <div class="p-4 text-center">Carousel</div>
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </section>
+
+
+        <!----- Pricing section-------->
+
+
+        <section class="relative bg-cyan-600 text-cyan-200 py-32" id="Pricing">
+
+            <!----- Gray Box for the top section ----->
+            <div class="absolute top-0 inset-x-0 h-48 bg-gray-300"></div>
+
+            <!-------Container Div--------->
+
+            <div
+                class="relative container mx-auto px-10 flex flex-col items-center justify-center lg:space-x-8 lg:flex-row sm:space-y-24 lg:space-y-0 sm:mt-6 lg:mt-0">
+                <!-----Left Box ----->
+
+
+                <div class="pt-16 text-xl space-y-2 sm:text-center w-1/3 lg:text-right">
+
+                    <p><strong class="font-bold text-white">XY Videos</strong> at a smooth pace</p>
+                    <p><strong class="font-bold text-white">AB Hours</strong> of learning + building</p>
+                    <p><strong class="font-bold text-white">Source Code</strong> and Tailwind Playground</p>
+
+
+
+                </div>
+
+
+                <!-----Pricing Box ----->
+
+                <div class="bg-white text-gray-800 p-8 shadow-2xl text-center space-y-4 hover:scale-105 transition duration-500 cursor-pointer shadow-new sm:w-full md:1/3 
+sm:order-first lg:order-none">
+                    <h3 class="text-gray-600 text-center text-lg">Learn Tailwind <span class="italic">CSS</span></h3>
+                    <div class="relative mb-8 text-6xl flex items-center justify-center">
+                        <div>
+                            <span class="text-gray-400 line-through mr-3 opacity-50">$19</span>
+                            <span class="text-gray-700"><span class="text-gray-500">$</span>9</span>
+
+
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="block p-3 text-2xl bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 text-yellow-700 hover:text-yellow-900 rounded shadow
+hover:shadow-2xl transition duration-300">Get the course</a>
+
+                </div>
+
+                <!-----Right Box ----->
+
+                <div class="text-xl pt-16 space-y-2 lg:text-left text-center lg:w-1/3">
+                    <p>Use the code in your<strong class="font-bold text-white"> Own Projects</strong></p>
+                    <p>Access to<strong class="font-bold text-white"> Messages</strong> for support</p>
+                    <p>Lifetime<strong class="font-bold text-white"> Access</strong></p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!----------- Video list Section -------->
+
+        <section>
+
+            <div class="py-32 bg-gradient-to-b from-gray-700 to-gray-800">
+
+                <!-------Container Div---------->
+                <div class="container mx-auto px-10">
+
+                    <div class="mb-10 text-center space-y-4">
+
+                        <h2
+                            class="text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-br from-white to-green-300 font-bold">
+                            The Modules/Videos</h2>
+                        <p class="text-2xl text-gray-200">9 Hours of Tailwind learning in 15 modules and 55 videos.</p>
+
+                    </div>
+
+                    <div class="max-w-3xl mx-auto text-gray-400">
+
+                        <div class="p-6 bg-gray-800 flex justify-between items-center">
+
+                            <h4 class="text-3xl">Getting Started</h4>
+
+
+
+                            <div class="flex space-x-7 text-xl text-center font-bold">
+
+
+                                <div>6<span class="block text-sm font-normal">Videos</span></div>
+
+                                <div>33<span class="block text-sm font-normal">Minutes</span></div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="max-w-3xl mx-auto text-gray-400">
+
+                        <div class="p-6 bg-gray-800 opacity-50 flex justify-between items-center">
+
+                            <h4 class="text-3xl">Main Concepts</h4>
+
+
+
+                            <div class="flex space-x-7 text-xl text-center font-bold">
+
+
+                                <div>11<span class="block text-sm font-normal">Videos</span></div>
+
+                                <div>67<span class="block text-sm font-normal">Minutes</span></div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="max-w-3xl mx-auto text-gray-400">
+
+                        <div class="p-6 bg-gray-800 flex justify-between items-center">
+
+                            <h4 class="text-3xl">Layouts</h4>
+
+
+
+                            <div class="flex space-x-7 text-xl text-center font-bold">
+
+
+                                <div>4<span class="block text-sm font-normal">Videos</span></div>
+
+                                <div>37<span class="block text-sm font-normal">Minutes</span></div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!----------- FAQ Section ----------->
+
+
+        <section class="text-gray-700" id="FAQ">
+
+            <!-----Container Div------->
+
+            <div class="container mx-auto px-5 py-24">
+
+                <div class="text-center mb-20">
+
+                    <h1 class="text-2xl sm:text-3xl font-medium text-gray-900 mb-4">Frequently Asked Question</h1>
+                    <p class="text-base leading-relaxed lg:3/4 xl:2/4">The most common questions about how our business
+                        works and what we can do for you</p>
+                </div>
+
+
+                <!------- FAQ Listing -------->
+
+
+                <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2">
+
+                    <div class="w-full lg:w-1/2 px-4 py-2">
+                        <details class="mb-4">
+
+                            <summary class="font-semibold bg-gray-200 px-4 py-2 rounded-md">
+                                How long is the ite live ?
+
+
+                            </summary>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nobis tempora sequi modi
+                                ipsum culpa repellat suscipit, atque,
+                                minima harum quisquam delectus tenetur odit quam, eius earum pariatur saepe laborum
+                                deleniti reiciendis quod. Ipsa, aperiam pariatur
+                                explicabo ducimus doloremque esse. Doloremque quasi in officiis dolorum?
+                            </span>
+
+                        </details>
+
+
+
+
+                        <details class="mb-4">
+
+                            <summary class="font-semibold bg-gray-200 px-4 py-2 rounded-md">
+                                What is the Professional Fees ?
+
+
+                            </summary>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nobis tempora sequi modi
+                                ipsum culpa repellat suscipit, atque,
+                                minima harum quisquam delectus tenetur odit quam, eius earum pariatur saepe laborum
+                                deleniti reiciendis quod. Ipsa, aperiam pariatur
+                                explicabo ducimus doloremque esse. Doloremque quasi in officiis dolorum?
+                            </span>
+
+                        </details>
+
+
+
+                        <details class="mb-4">
+
+                            <summary class="font-semibold bg-gray-200 px-4 py-2 rounded-md">
+                                Any 1:1 mentorship available ?
+
+
+                            </summary>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nobis tempora sequi modi
+                                ipsum culpa repellat suscipit, atque,
+                                minima harum quisquam delectus tenetur odit quam, eius earum pariatur saepe laborum
+                                deleniti reiciendis quod. Ipsa, aperiam pariatur
+                                explicabo ducimus doloremque esse. Doloremque quasi in officiis dolorum?
+                            </span>
+
+                        </details>
+
+
+
+                    </div>
+
+
+
+
+                    <div class="w-full lg:w-1/2 px-4 py-2">
+                        <details class="mb-4">
+
+                            <summary class="font-semibold bg-gray-200 px-4 py-2 rounded-md">
+                                Is there any money back gurantee ?
+
+
+                            </summary>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nobis tempora sequi modi
+                                ipsum culpa repellat suscipit, atque,
+                                minima harum quisquam delectus tenetur odit quam, eius earum pariatur saepe laborum
+                                deleniti reiciendis quod. Ipsa, aperiam pariatur
+                                explicabo ducimus doloremque esse. Doloremque quasi in officiis dolorum?
+                            </span>
+
+                        </details>
+
+
+
+
+                        <details class="mb-4">
+
+                            <summary class="font-semibold bg-gray-200 px-4 py-2 rounded-md">
+                                Will ISO certification provided ?
+
+
+                            </summary>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nobis tempora sequi modi
+                                ipsum culpa repellat suscipit, atque,
+                                minima harum quisquam delectus tenetur odit quam, eius earum pariatur saepe laborum
+                                deleniti reiciendis quod. Ipsa, aperiam pariatur
+                                explicabo ducimus doloremque esse. Doloremque quasi in officiis dolorum?
+                            </span>
+
+                        </details>
+
+
+
+
+                        <details class="mb-4">
+
+                            <summary class="font-semibold bg-gray-200 px-4 py-2 rounded-md">
+                                How will I solve my doubts ?
+
+
+                            </summary>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nobis tempora sequi modi
+                                ipsum culpa repellat suscipit, atque,
+                                minima harum quisquam delectus tenetur odit quam, eius earum pariatur saepe laborum
+                                deleniti reiciendis quod. Ipsa, aperiam pariatur
+                                explicabo ducimus doloremque esse. Doloremque quasi in officiis dolorum?
+                            </span>
+
+                        </details>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+
+
+        <!--------- Footer Section ------->
+
+
+
+        <section class="bg-gray-100 p-8">
+
+            <footer class="flex justify-center bg-gray-100 text-gray-900 px-4">
+                <!----Container Div------>
+                <div class="container py-6 lg:py-10">
+                    <h1
+                        class="text-center text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600">
+                        Get updates on this course</h1>
+
+
+                    <div class="a flex justify-center mt-6">
+
+                        <div class="bg-white rounded-full p-1">
+
+                            <div class="flex flex-wrap justify-between md:flex-row">
+
+                                <input class="rounded-full m-1 p-2 text-gray-700 text-sm focus:outline-none"
+                                    type="email" placeholder="Enter your email">
+
+                                <button class="w-full text-white m-1 py-2 px-5 text-sm bg-gray-800 rounded-full font-semibold uppercase lg:w-auto
+bg-gradient-to-r from-pink-500 to-indigo-500 hover:from-pink-800 to-indigo-900">Subscribe</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <hr class="h-px mt-6 bg-gray-700 border-none">
+
+
+                    <div class="flex flex-col items-center justify-between mt-6 md:flex-row">
+                        <div>
+                            <a href="#"
+                                class="text-4xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">Tailwind
+                                CSS Mastery</a>
+                        </div>
+
+
+                        <div class="flex mt-4 md:m-0">
+                            <div class="-mx-4">
+
+                                <a href="#" class="px-5 text-sm">About</a>
+                                <a href="#" class="px-5 text-sm">Blog</a>
+                                <a href="#" class="px-5 text-sm">News</a>
+                                <a href="#" class="px-5 text-sm">Contact</a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </footer>
+
+        </section>
+
+
+    </div>
+</body>
+
+</html>
